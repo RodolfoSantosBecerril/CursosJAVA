@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ejecicio Formulario</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <<link rel="stylesheet" type="text/ccs" href="recursos/estilos.css"/>
+        <script type="text/javascript" src="recursos/funciones.js"/>
+
+    </head>
+    <body>
+        <form name="form1"action="ManejoFormulariosHTML/servlet" method="post"
+              onsubmit="return validarForma(this)">
+            <input type="hidden" name="oculto" value="valorOculto"> </input>
+            <table width ="200" id="enfasis-columna">
+                <caption>
+                    Formulario Registro de Datos
+                </caption>
+                <tr>
+                    <td class="columna"><!-- comment --> 
+                        Usuario: (*)
+                    </td>
+                    <td> 
+                        <input" class="default" type="text" name="usuario"
+                              value="Escribir usuario" onfocus="this.select()"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="columna">
+                        Password:(*)   
+                    </td>
+                    <td>
+                        <input class="default" type="password" name="password"
+                               onfocus="this.select()"/>
+                    </td>
+
+                </tr>
+
+                <td class="columna">
+                    Teconologias de Internet:(*)   
+                </td>
+                <td> 
+                    Java <input type="checkbox" name="tecnologia" value="java"> 
+                    &nbsp; &nbsp;&nbsp;  
+                    .Net <input type="checkbox" name="tecnologia" value="net"> 
+                    &nbsp; &nbsp;&nbsp;
+                    Php <input type="checkbox" name="tecnologia" value="php"> 
+
+
+                </td>
+
+                </tr>
+
+            </table>
+
+        </form>
+    </body>
+</html>
